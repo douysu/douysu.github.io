@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>YinDou Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="YinDou Blog"><meta name="msapplication-TileImage" content="/images/astronaut.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="YinDou Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="此处展示我个人的工作。我的简介请看个人简介. 项目一览图形 table th:first-of-type {       width: 280px;  }      内容 介绍     Physically Based Rendering-IBL（PBR基于物理渲染）[Video] [WebPage] [Code]    Fluid Simulation(物理动画流体模拟)  [Video] [W"><meta property="og:type" content="blog"><meta property="og:title" content="YinDou Blog"><meta property="og:url" content="http://yindowyd.com/2021/09/07/hello/"><meta property="og:site_name" content="YinDou Blog"><meta property="og:description" content="此处展示我个人的工作。我的简介请看个人简介. 项目一览图形 table th:first-of-type {       width: 280px;  }      内容 介绍     Physically Based Rendering-IBL（PBR基于物理渲染）[Video] [WebPage] [Code]    Fluid Simulation(物理动画流体模拟)  [Video] [W"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/PBR-OpenGL.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/IISPH.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/tinyraytracer.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/render3.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/curvature.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/skeleton.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/blur-scene-gaussian--3d.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/x-ray-scene_3d.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r9.gif"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/streak.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/wallpaper.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/opengles-uniform-buffer.jfif"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/CameraRoam.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r1.gif"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r2.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r3.gif"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r4.gif"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r5.gif"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r6.gif"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/zhuan.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/shu1.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/r10.jpg"><meta property="og:image" content="http://yindowyd.com/2021/09/07/hello/radon.png"><meta property="article:published_time" content="2021-09-06T16:00:00.000Z"><meta property="article:modified_time" content="2021-12-06T14:22:11.355Z"><meta property="article:author" content="����(douysu)"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="PBR-OpenGL.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://yindowyd.com/2021/09/07/hello/"},"headline":"YinDou Blog","image":["http://yindowyd.com/2021/09/07/hello/PBR-OpenGL.jpg","http://yindowyd.com/2021/09/07/hello/IISPH.jpg","http://yindowyd.com/2021/09/07/hello/tinyraytracer.jpg","http://yindowyd.com/2021/09/07/hello/render3.jpg","http://yindowyd.com/2021/09/07/hello/curvature.jpg","http://yindowyd.com/2021/09/07/hello/skeleton.jpg","http://yindowyd.com/2021/09/07/hello/blur-scene-gaussian--3d.jpg","http://yindowyd.com/2021/09/07/hello/x-ray-scene_3d.jpg","http://yindowyd.com/2021/09/07/hello/r9.gif","http://yindowyd.com/2021/09/07/hello/streak.jpg","http://yindowyd.com/2021/09/07/hello/wallpaper.jpg","http://yindowyd.com/2021/09/07/hello/CameraRoam.jpg","http://yindowyd.com/2021/09/07/hello/r1.gif","http://yindowyd.com/2021/09/07/hello/r2.jpg","http://yindowyd.com/2021/09/07/hello/r3.gif","http://yindowyd.com/2021/09/07/hello/r4.gif","http://yindowyd.com/2021/09/07/hello/r5.gif","http://yindowyd.com/2021/09/07/hello/r6.gif","http://yindowyd.com/2021/09/07/hello/zhuan.jpg","http://yindowyd.com/2021/09/07/hello/shu1.jpg","http://yindowyd.com/2021/09/07/hello/r10.jpg","http://yindowyd.com/2021/09/07/hello/radon.png"],"datePublished":"2021-09-06T16:00:00.000Z","dateModified":"2021-12-06T14:22:11.355Z","author":{"@type":"Person","name":"����(douysu)"},"publisher":{"@type":"Organization","name":"YinDou Blog","logo":{"@type":"ImageObject","url":"http://yindowyd.com/images/astronaut.png"}},"description":"此处展示我个人的工作。我的简介请看个人简介. 项目一览图形 table th:first-of-type {       width: 280px;  }      内容 介绍     Physically Based Rendering-IBL（PBR基于物理渲染）[Video] [WebPage] [Code]    Fluid Simulation(物理动画流体模拟)  [Video] [W"}</script><link rel="canonical" href="http://yindowyd.com/2021/09/07/hello/"><link rel="icon" href="/images/astronaut.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/astronaut.png" alt="YinDou Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-06T16:00:00.000Z" title="2021/9/7 上午12:00:00">2021-09-07</time>发表</span><span class="level-item"><time dateTime="2021-12-06T14:22:11.355Z" title="2021/12/6 下午10:22:11">2021-12-06</time>更新</span><span class="level-item">7 分钟读完 (大约1124个字)</span></div></div><div class="content"><p>此处展示我个人的工作。我的简介请看<a href="/about/">个人简介</a>.</p>
+<h1 id="项目一览"><a href="#项目一览" class="headerlink" title="项目一览"></a>项目一览</h1><h3 id="图形"><a href="#图形" class="headerlink" title="图形"></a>图形</h3><style>
+table th:first-of-type {  
+    width: 280px; 
+}
+</style>
+
+<table>
+<thead>
+<tr>
+<th align="center">内容</th>
+<th align="left">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="PBR-OpenGL.jpg" width=300></td>
+<td align="left">Physically Based Rendering-IBL（PBR基于物理渲染）<br>[<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1TV411z7qe">Video</a>] [<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/176474625">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/physically-rendering">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="IISPH.jpg" width=300></td>
+<td align="left">Fluid Simulation(物理动画流体模拟) <br> [<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1454y127Vy?from=search&seid=5825690446384116530">Video</a>] [<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/161808444">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/melt-animation">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="tinyraytracer.jpg" width=300></td>
+<td align="left">Ray Tracing（光线追踪) <br> [<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/144189898">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/tinyraytracerYD">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="render3.jpg" width=300></td>
+<td align="left">Software Rendering（软渲染） <br> [<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/141210744">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/tinyrendererYD">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="curvature.jpg" width=300></td>
+<td align="left">3D Curvature（3D曲率原理及计算） <br> [<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112294045">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/3D-PLY">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="skeleton.jpg" width=300></td>
+<td align="left">3D Skeleton Analysis（3D模型骨架提取及分析） <br> [<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112299945">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/3D-skeleton">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="blur-scene-gaussian--3d.jpg" width=300></td>
+<td align="left">3D Scene Blur（屏幕后处理-景深模糊） <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79512208">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/blur-scene-gaussian--3d">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="x-ray-scene_3d.jpg" width=300></td>
+<td align="left">Multi-buffer X-Ray（离屏渲染FBO-人物透墙） <br> [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/x-ray-scene_3d">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="r9.gif" width=150></td>
+<td align="left">3D Medical Body（医疗项目3D人体展示系统） <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79241519">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/moving-light-strip">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="streak.jpg" width=150></td>
+<td align="left">OpenGL MotionStreak（OpenGL拖尾、刀光、剑光、尾焰效果） <br> [<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112252151">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/streak">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="wallpaper.jpg" width=150></td>
+<td align="left">3D Aquarium（基于物理粒子系统的鱼群水族馆） <br>  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/wallpaper">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="opengles-uniform-buffer.jfif" width=150></td>
+<td align="left">OpenGL Uniform Buffer Object（Uniform缓冲对象） <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79130517">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/opengles-uniform-buffer">Code</a>]</td>
+</tr>
+<tr>
+<td align="center"><img src="CameraRoam.jpg" width=300></td>
+<td align="left">OpenGL Camera（OpenGL 摄像机漫游） <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79130876">WebPage</a>]  [<a target="_blank" rel="noopener" href="https://github.com/douysu/graphics-algorithm/tree/master/CameraRoam">Code</a>]</td>
+</tr>
+</tbody></table>
+<h3 id="Shader"><a href="#Shader" class="headerlink" title="Shader"></a>Shader</h3><table>
+<thead>
+<tr>
+<th align="left">内容</th>
+<th align="left">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="r1.gif" width=300></td>
+<td align="left">关键帧动画效果顶点着色器的实现 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79152173">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="r2.jpg" width=300></td>
+<td align="left">树干弯曲顶点着色器实现 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79151382">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="r3.gif" width=300></td>
+<td align="left">旋转扭动效果顶点着色器实现 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79141241">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="r4.gif" width=300></td>
+<td align="left">波动效果顶点着色器的实现 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79139315">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="r5.gif" width=300></td>
+<td align="left">扭曲效果顶点着色器的实现 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79171289">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="r6.gif" width=300></td>
+<td align="left">膨胀效果顶点着色器的实现 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79171410">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="zhuan.jpg" width=300></td>
+<td align="left">砖头墙壁纹理片元着色器实现 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79187023">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="shu1.jpg" width=300></td>
+<td align="left">着色器滤镜、图像卷积与滤波、数字图像处理 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79192901">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+<tr>
+<td align="left"><img src="r10.jpg" width=300></td>
+<td align="left">体积雾特效的使用 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79251244">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/shader">Code</a>]</td>
+</tr>
+</tbody></table>
+<h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><table>
+<thead>
+<tr>
+<th align="center">内容</th>
+<th align="center">源代码位置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79173704">C++ 高级数据类型枚举Enum</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79178943">C++ 函数内联inline</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79562998">C++ 泛型编程—Template模板</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/79592468">C++ 复数类complex解析</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/84995798">C++ 常量总结-const</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/85007434">C++ const常用用法-提高程序的健壮性</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/85258980">C++ 内存管理——堆（stack）栈（heap）</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/85344851">C++ 内存管理——常见的内存错误及对策</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/85375163">C++ 内存管理——指针参数传递内存</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/86481072">C++ 实践细节总结</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/90272892">C++ 线程的基本使用方式</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+<tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/90273092">C++ 拷贝函数C++标准库复数类string解析</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/c-code">源代码位置</a></td>
+</tr>
+</tbody></table>
+<h3 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h3><table>
+<thead>
+<tr>
+<th align="left">内容</th>
+<th align="left">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><img src="radon.png" width=200></td>
+<td align="left">radon直线检测及绘制直线 <br> [<a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/89632272">WebPage</a>] [<a target="_blank" rel="noopener" href="https://github.com/douysu/algorithm/tree/master/image-processing">Code</a>]</td>
+</tr>
+</tbody></table>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><table>
+<thead>
+<tr>
+<th align="center">内容</th>
+<th align="center">源代码位置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a target="_blank" rel="noopener" href="https://blog.csdn.net/ModestBean/article/details/101852092">ACO蚂蚁寻路最短路径TSP问题</a></td>
+<td align="center"><a target="_blank" rel="noopener" href="https://github.com/douysu/algorithm/tree/master/ACO_aunt_optimal_path">源代码位置</a></td>
+</tr>
+</tbody></table>
+</div><div class="article-licensing box"><div class="licensing-title"><p><a href="http://yindowyd.com/2021/09/07/hello/">http://yindowyd.com/2021/09/07/hello/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>����(douysu)</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-07</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-12-06</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="/images/shouzhi.jpg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="/images/shou.jpg" alt="微信"></span></a></div></div></div><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "a11ce9275aaaa707968abe1fa8d72b08",
+            repo: "blog-save",
+            owner: "douysu",
+            clientID: "ccf535376ea857d115a4",
+            clientSecret: "f6c99b799ce48950dcf0d33972ebf2bbe20a17a8",
+            admin: ["douysu"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 10,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/images/toux.jpg" alt="尹豆(douysu)"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">尹豆(douysu)</p><p class="is-size-6 is-block">勿在浮沙筑高台</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Beijing, China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/douysu" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="zhihu" href="https://www.zhihu.com/people/yindou97"><i class="fab fa-zhihu"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://evanzj.com/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Evanzj</span></span><span class="level-right"><span class="level-item tag">evanzj.com</span></span></a></li><li><a class="level is-mobile" href="https://yangwc.com/about/" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">YangWC</span></span><span class="level-right"><span class="level-item tag">yangwc.com</span></span></a></li></ul></div></div></div><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-09-06T16:00:00.000Z">2021-09-07</time></p><p class="title"><a href="/2021/09/07/hello/"> </a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>本站总访问量<span id="busuanzi_value_site_pv"></span> 次 本站访客数<span id="busuanzi_value_site_uv"></span>人次</div><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/astronaut.png" alt="YinDou Blog" height="28"></a><p class="is-size-7"><span>&copy; 2021 ����(douysu)</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
